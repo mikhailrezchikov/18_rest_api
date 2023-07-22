@@ -1,11 +1,9 @@
 package in.reqres;
 
-import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.http.ContentType.JSON;
-import static org.hamcrest.Matchers.hasKey;
 import static org.hamcrest.Matchers.is;
 
 public class LoginTests {
@@ -106,5 +104,4 @@ public class LoginTests {
                 .log().body()
                 .statusCode(415);
     }
-
 }
