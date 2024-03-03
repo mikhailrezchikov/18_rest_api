@@ -36,8 +36,5 @@ public class LoginTests extends TestBase {
         getWebDriver().manage().addCookie(new Cookie("expires", loginResponse.getUserId()));
 
         open("/login");
-        open("/login");
-
-
     }
 }
