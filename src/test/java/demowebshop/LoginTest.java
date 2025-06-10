@@ -52,4 +52,19 @@ public class LoginTest extends TestBase {
         step("Verify successful authorization", () ->
                 $(".account").shouldHave(text(login)));
     }
+
+    @Test
+    void simpleTest() {
+
+        step("Login", () -> {
+            open("");
+            $(".ico-login").click();
+            $(".email").setValue(login);
+            $(".password").setValue(password);
+            $(".button-1.login-button").click();
+        });
+
+        step("Verify successful authorization", () ->
+                $(".account").shouldHave(text(login)));
+    }
 }
