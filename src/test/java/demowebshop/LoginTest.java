@@ -27,7 +27,7 @@ public class LoginTest extends TestBase {
 
     @Test
     void loginWithApiTest() {
-        step("Get authorization cookie by api and set it to browser", () -> {
+        step("Get authorization cookie by api and set it to browser TEST", () -> {
             String authCookieKey = "NOPCOMMERCE.AUTH";
             String authCookieValue = given()
                     .contentType("application/x-www-form-urlencoded")
