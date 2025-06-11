@@ -104,19 +104,4 @@ public class LoginTests {
                 .log().body()
                 .statusCode(415);
     }
-
-    @Test
-    void simpleTest() {
-
-        given()
-                .log().uri()
-                .log().method()
-                .log().body()
-                .when()
-                .post("https://reqres.in/api/login")
-                .then()
-                .log().status()
-                .log().body()
-                .statusCode(415);
-    }
-}
+ }
